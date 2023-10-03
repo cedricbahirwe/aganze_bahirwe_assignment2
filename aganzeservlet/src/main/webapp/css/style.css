@@ -1,0 +1,95 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    background: #333333;
+    font-family: "Titillium Web", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #1ab188;
+    transition: 0.5s ease;
+}
+a:hover {
+    color: #179b77;
+}
+.form {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 650px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 40px;
+    font-weight: 600;
+}
+
+h2, h3 {
+    color: #ffffff;
+}
+label, p {
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    font-size: 22px;
+}
+label {
+    margin: 2px;
+    color: #1ab188;
+}
+label.active {
+    transform: translateY(-20px);
+    left: 2px;
+    font-size: 14px;
+}
+label.highlight {
+    color: #ffffff;
+}
+input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+input:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    background: #1ab188;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.button:hover,
+.button:focus {
+    background: #179b77;
+}
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.labeled-links {
+    color: #ffffff;
+}
