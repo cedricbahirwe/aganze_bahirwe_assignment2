@@ -29,7 +29,7 @@ a:hover {
 h1 {
     text-align: center;
     color: #ffffff;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
     font-weight: 600;
 }
 
@@ -92,4 +92,27 @@ input:focus {
 
 .labeled-links {
     color: #ffffff;
+}
+
+
+.hint {
+    background: rgba(26, 177, 136, 0.35);
+    color: #ffffff;
+    transition: all 0.5s ease;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 0 15px 0;
+}
+
+.hint h4 {
+    margin: 0;
+}
+.hint p {
+    font-size: 14px;
+}
+
+.hint p span {
+    color: #ffffff;
+    text-decoration: underline;
+    /*text-underline: #1ab188;*/
 }

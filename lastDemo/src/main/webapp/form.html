@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Admission Form</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="form">
+  <h1>Student Admission Form</h1>
+  <form action="form" method="post" enctype="multipart/form-data">
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <br><br>
+
+    <label for="passportPicture">Passport Picture (JPG or PNG):</label>
+    <input type="file" id="passportPicture" name="passportPicture" accept=".jpg, .jpeg, .png">
+    <br><br>
+
+    <label for="certificates">Certificates (PDF):</label>
+    <input type="file" id="certificates" name="certificates" accept=".pdf">
+    <br><br>
+
+    <input type="submit" value="Submit" class="button button-block">
+  </form>
+</div>
+</body>
+</html>
