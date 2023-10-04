@@ -1,6 +1,8 @@
 package com.example.lastdemo.service;
 
+import javax.mail.Session;
 import javax.servlet.*;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Level;
@@ -20,8 +22,6 @@ public class AuthenticationFilter implements Filter {
         String email, password;
         try {
 
-            PrintWriter pr = servletResponse.getWriter();
-
             email = servletRequest.getParameter("email");
             password = servletRequest.getParameter("password");
 
@@ -29,10 +29,17 @@ public class AuthenticationFilter implements Filter {
                 servletResponse.setContentType("text/html");
                 logger.log(Level.INFO, "You have authenticated");
 
-                pr.print("<h1>You are authenticated</h1>");
                 filterChain.doFilter(servletRequest, servletResponse);
+            } else {
+                HttpServletResponse httpResponse = (HttpServletResponse) servletResponse;
+
+                httpResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+
+                String errorMessage = "UnAuthorized: Please use the provided credentials.";
+                httpResponse.getWriter().write(errorMessage);
             }
         } catch (IOException e) {
+            e.printStackTrace();
             logger.log(Level.SEVERE, "An error happened " + e.getMessage());
         }
     }
