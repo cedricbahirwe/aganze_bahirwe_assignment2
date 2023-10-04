@@ -26,7 +26,7 @@ public class UploadServlet extends HttpServlet {
                 lastName,
                 "bahirwe.aganze@auca.ac.rw",
                 "servlet2023",
-                "cedbahirwe@gmail.com",
+                "bahirwe.aganze@auca.ac.rw", // Myself
                 "New Student Admission",
                 "No more Info Added");
         EmailService emailService = new EmailService();
