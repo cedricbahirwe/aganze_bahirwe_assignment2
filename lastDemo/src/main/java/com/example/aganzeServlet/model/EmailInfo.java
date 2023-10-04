@@ -1,4 +1,4 @@
-package com.example.lastdemo.model;
+package com.example.aganzeServlet.model;
 
 public class EmailInfo {
 

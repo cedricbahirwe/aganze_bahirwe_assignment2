@@ -1,7 +1,7 @@
-package com.example.lastdemo;
+package com.example.aganzeServlet;
 
-import com.example.lastdemo.model.EmailInfo;
-import com.example.lastdemo.service.EmailService;
+import com.example.aganzeServlet.model.EmailInfo;
+import com.example.aganzeServlet.service.EmailService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;

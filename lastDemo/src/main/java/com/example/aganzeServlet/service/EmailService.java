@@ -1,6 +1,6 @@
-package com.example.lastdemo.service;
+package com.example.aganzeServlet.service;
 
-import com.example.lastdemo.model.EmailInfo;
+import com.example.aganzeServlet.model.EmailInfo;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;

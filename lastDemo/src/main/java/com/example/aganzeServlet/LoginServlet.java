@@ -1,4 +1,4 @@
-package com.example.lastdemo;
+package com.example.aganzeServlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

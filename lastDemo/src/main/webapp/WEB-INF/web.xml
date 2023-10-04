@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.example.lastdemo.LoginServlet</servlet-class>
+        <servlet-class>com.example.aganzeServlet.LoginServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -16,7 +16,7 @@
 
     <filter>
         <filter-name>Authentication</filter-name>
-        <filter-class>com.example.lastdemo.service.AuthenticationFilter</filter-class>
+        <filter-class>com.example.aganzeServlet.service.AuthenticationFilter</filter-class>
     </filter>
 
     <filter-mapping>
@@ -26,7 +26,7 @@
 
     <servlet>
         <servlet-name>UploadServlet</servlet-name>
-        <servlet-class>com.example.lastdemo.UploadServlet</servlet-class>
+        <servlet-class>com.example.aganzeServlet.UploadServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
