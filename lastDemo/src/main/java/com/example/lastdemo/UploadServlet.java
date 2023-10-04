@@ -5,10 +5,7 @@ import com.example.lastdemo.service.EmailService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
+import javax.servlet.http.*;
 import java.io.IOException;
 
 @MultipartConfig
@@ -40,5 +37,9 @@ public class UploadServlet extends HttpServlet {
                 emailInfo,
                 passportPicturePart,
                 certificatesPart);
+
+        // Store state in session
+        HttpSession session = request.getSession();
+        session.setAttribute("isMailSent", true);
     }
 }
